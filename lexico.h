@@ -1,5 +1,5 @@
-#ifndef _LEXICO
-#define _LEXICO
+#ifndef LEXICO_H_INCLUDED
+#define LEXICO_H_INCLUDED
 
 #include <iostream>
 #include <string>
@@ -34,6 +34,7 @@ public:
  static const int PESOS= 23;
 };
 
+
 class Lexico{
       private:
        string fuente;
@@ -43,7 +44,7 @@ class Lexico{
        char c;
        int estado;
 
-       string sigCaracter();
+       char sigCaracter();
        void sigEstado(int estado);
        void aceptacion(int estado);
        bool esLetra(char c);
@@ -67,4 +68,5 @@ class Lexico{
 };
 
 
-#endif
+
+#endif // LEXICO_H_INCLUDED
